@@ -10,7 +10,7 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            TestOddOccurrenceInArray();
+            TestFrogJmp();
         }
 
         static void TestBinaryGap()
@@ -78,6 +78,13 @@ namespace Codility
 
             testArray = new int[] { 4, 3, 4, 3, 9 };
             Console.WriteLine(OddOccurrencesInArray.GetOddOccurrenceInArray(testArray));
+
+            Console.ReadLine();
+        }
+
+        static void TestFrogJmp()
+        {
+            Console.WriteLine(FrogJmp.GetHops(1, 100000, 1));
 
             Console.ReadLine();
         }
