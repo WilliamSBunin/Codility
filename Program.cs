@@ -10,7 +10,7 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            TestRotateIntArray();
+            TestOddOccurrenceInArray();
         }
 
         static void TestBinaryGap()
@@ -62,11 +62,22 @@ namespace Codility
 
         static void TestRotateIntArray()
         {
-            int[] testArray = new int[] {4, 3, 2, 1};
+            int[] testArray = new int[] { 4, 3, 2, 1 };
             Console.WriteLine(String.Join(", ", CyclicRotation.RotateIntArray(testArray, 1)));
             Console.WriteLine(String.Join(", ", CyclicRotation.RotateIntArray(testArray, 2)));
             Console.WriteLine(String.Join(", ", CyclicRotation.RotateIntArray(testArray, 4)));
             Console.WriteLine(String.Join(", ", CyclicRotation.RotateIntArray(testArray, 8)));
+
+            Console.ReadLine();
+        }
+
+        static void TestOddOccurrenceInArray()
+        {
+            int[] testArray = new int[] { 4, 3, 4, 3, 2 };
+            Console.WriteLine(OddOccurrencesInArray.GetOddOccurrenceInArray(testArray));
+
+            testArray = new int[] { 4, 3, 4, 3, 9 };
+            Console.WriteLine(OddOccurrencesInArray.GetOddOccurrenceInArray(testArray));
 
             Console.ReadLine();
         }
