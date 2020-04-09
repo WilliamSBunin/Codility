@@ -10,7 +10,7 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            TestFrogJmp();
+            TestPermMissingElem();
         }
 
         static void TestBinaryGap()
@@ -85,6 +85,23 @@ namespace Codility
         static void TestFrogJmp()
         {
             Console.WriteLine(FrogJmp.GetHops(1, 100000, 1));
+
+            Console.ReadLine();
+        }
+
+        static void TestPermMissingElem()
+        {
+            int[] testArray = new int[] { 4, 3, 1, 5 };
+
+            Console.WriteLine(PermMissingElem.GetMissingElementStartingWith1(testArray));
+
+            testArray = new int[] { 4, 3, 1, 5, 2 };
+
+            Console.WriteLine(PermMissingElem.GetMissingElementStartingWith1(testArray));
+
+            testArray = new int[] { };
+
+            Console.WriteLine(PermMissingElem.GetMissingElementStartingWith1(testArray));
 
             Console.ReadLine();
         }
