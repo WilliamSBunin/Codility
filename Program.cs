@@ -10,7 +10,7 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            TestPermMissingElem();
+            TestTapeEquilibrium();
         }
 
         static void TestBinaryGap()
@@ -102,6 +102,15 @@ namespace Codility
             testArray = new int[] { };
 
             Console.WriteLine(PermMissingElem.GetMissingElementStartingWith1(testArray));
+
+            Console.ReadLine();
+        }
+
+        static void TestTapeEquilibrium()
+        {
+            int[] testArray = new int[] { -1000, 1, 2 };
+
+            Console.WriteLine(TapeEquilibrium.GetTapeEquilibriumMinDifference(testArray));
 
             Console.ReadLine();
         }
